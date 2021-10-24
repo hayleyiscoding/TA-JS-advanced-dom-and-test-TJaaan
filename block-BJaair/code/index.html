@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <title>Notice Board</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Notice Board</h1>
+        </div>
+    </header> 
+    <main>
+        <div class="container notice-div">
+          <h2 class="empty">Noticeboard is empty. Add a notice below.</h2>
+            <ul class="flex">
+                <!-- <li>
+                    <a href="#">
+                      <h6>Category</h6>
+                      <h2>Title</h2>
+                    </a>
+                  </li>
+                <li>
+                    <a href="#">
+                      <h6>Category</h6>
+                      <h2>Title</h2>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h6>Category</h6>
+                      <h2>Title</h2>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h6>Category</h6>
+                      <h2>Title</h2>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h6>Category</h6>
+                      <h2>Title</h2>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h6>Category</h6>
+                      <h2>Title</h2>
+                    </a>
+                  </li> -->
+            </ul>
+        </div>
+        <div class="container form-div">
+            <form action="">
+                <fieldset>
+                    <legend>ADD A NEW NOTICE</legend>
+                    <input type="text" maxlength = "19" placeholder = "Enter Notice Title" class="title" >
+                    <select id="category" name="category">
+                        <option name="For Sale">For Sale</option>
+                        <option name="Wanted">Wanted</option>
+                        <option name="Jobs">Jobs</option>
+                        <option name="Services">Services</option>
+                        <option name="Events">Events</option>
+                    </select>
+                    <button class='submit'>Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

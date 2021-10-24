@@ -1,0 +1,314 @@
+/* Meyers CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Resets */
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+input, textarea, button {
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+/* General */
+html {
+    font-size: 16px;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  color: var(--textLight);
+  font-weight: 100;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: #ffffff;
+}
+
+/* Flex  */
+.flex {
+  display: flex;
+}
+
+/* Headers and Text */
+ h1, h2, h6 {
+     font-size: 5rem;
+     font-family: 'Quicksand', sans-serif;
+     text-align: center;
+     margin-top: 4rem;
+     margin-bottom: 2rem;
+     font-weight: 300;
+ }
+ h2 {
+     font-size: 1rem;
+     margin-top: 0.5rem;
+     margin-bottom: 0;
+     padding: 0.5rem;
+     word-wrap: break-word;
+ }
+ h6 {
+     font-size: 0.8rem;
+     margin-top: 0;
+     margin-bottom: 0;
+     background-color: black;
+     color: white;
+     padding: 0.3rem;
+ }
+ .empty {
+  background-color: white;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  }
+
+/* Divs */
+.form-div {
+  padding: 3rem;
+  text-align: center;
+}
+.notice-div {
+  padding: 2rem;
+  background: url('/Users/hayley/Desktop/Altcampus course/javascript/advanced-javascript/TA-JS-advanced-dom-and-test-TJaaan/block-BJaair/code/backdrop.jpg') no-repeat center/cover;
+}
+
+ /* Form */
+ form {
+     text-align: center;
+     max-width: 400px;
+     margin: 0 auto;
+     border: 1px solid black;
+     padding: 2rem;
+ }
+input, select {
+     width: 100%;
+     border: 1px solid black;
+     padding: 0.5rem;
+     margin-bottom: 1rem;
+     font-family:'Quicksand', sans-serif;
+ }
+ legend {
+     font-size: 1.5rem;
+     font-family: 'Quicksand', sans-serif;
+     margin-bottom: 2rem;
+ }
+ button {
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    background-color: black;
+    color: #ffffff;
+    transition: all 200ms ease-in-out;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 0.3rem;
+    border: none;
+
+ }
+ button:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  opacity: 0.8;
+  color: #ffffff!important;
+}
+ input:focus {
+    outline-color: none !important;
+    border-color:black;
+
+}
+
+/* List */
+li {
+  padding: 0.5rem;
+}
+ul,li{
+    list-style:none;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  ul li a{
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    display:block;
+    height:9em;
+    width:9em;
+    padding:1em;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transform: rotate(-6deg);
+    transition: transform .15s linear;
+  }
+  
+  ul li:nth-child(even) a{
+    transform:rotate(4deg);
+    position:relative;
+    top:5px;
+    background:#cfc;
+  }
+  ul li:nth-child(3n) a{
+    transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+    background:#ccf;
+  }
+  ul li:nth-child(5n) a{
+    transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+  }
+  
+  ul li a:hover,ul li a:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+  }
+  
+  ul li{
+    margin:1em;
+  }
+
+

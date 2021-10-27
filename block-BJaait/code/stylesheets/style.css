@@ -1,0 +1,276 @@
+/* Meyers CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Resets */
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+input,
+textarea,
+button {
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+/* General */
+html {
+  font-size: 16px;
+}
+body {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: "Quicksand", sans-serif;
+  background-color: darkslateblue;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+.container-small {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+/* Flex  */
+.flex {
+  display: flex;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+
+/* Position Relative */
+.relative {
+  position: relative;
+}
+
+/* Header */
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  color: white;
+}
+
+/* Input box and button  */
+input {
+  border: 1px solid white;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  font-family: inherit;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.plus-button {
+  color: darkslateblue;
+  font-weight: 900;
+  font-size: 1.5rem;
+  background-color: white;
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  cursor: pointer;
+}
+
+/* Error Message  */
+#error {
+    padding-bottom: 1rem;
+}
+
+/* List */
+li {
+  color: darkslateblue;
+  background-color: white;
+  font-weight: 800;
+  font-family: inherit;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: move;
+}
+span {
+    padding-left: 2rem;
+}
+
+/* Drag and Drop Landing Element */
+.over {
+  border: 3px dashed darkslateblue;
+}
+
+/* Arrow */
+.arrow-container {
+  width: 25px;
+  /* cubic-bezier-easing = sine / mehr Beispiele: https://easings.net/ */
+  animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  cursor: pointer;
+  height: 20px;
+}
+.arrow-main {
+  padding-left: 9rem;
+  margin-bottom: -4rem;
+}
+.arrow-down {
+  height: 6px;
+  background: yellow;
+  transform: rotate(320deg);
+  transform-origin: 0% 0%;
+  border-radius: 5px;
+}
+.arrow-down:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 100%;
+  border-radius: 5px;
+  background: yellow;
+  transform: rotate(-90deg);
+  transform-origin: 0% 100%;
+}
+@keyframes bounce {
+  50% {
+    transform: translateY(-15px);
+  }
+}

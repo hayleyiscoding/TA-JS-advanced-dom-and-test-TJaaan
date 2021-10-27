@@ -31,8 +31,6 @@ let createUI = function () {
     let li = document.createElement("li");
     li.innerText = ` ${index + 1} - ${listItem.item}`;
     li.setAttribute("draggable", "true");
-    li.classList.add("flex");
-    li.classList.add("justify-between");
     let span = document.createElement("span");
     span.classList.add("delete");
     span.innerText = "X";
@@ -57,8 +55,8 @@ let createUI = function () {
     item.addEventListener("dragover", handleDragOver, false);
     item.addEventListener("dragenter", handleDragEnter, false);
     item.addEventListener("dragleave", handleDragLeave, false);
-    item.addEventListener("dragend", handleDragEnd, false);
     item.addEventListener("drop", handleDrop, false);
+    item.addEventListener("dragend", handleDragEnd, false);
   });
 };
 

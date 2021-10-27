@@ -214,6 +214,10 @@ input {
   cursor: pointer;
 }
 
+/* Error Message  */
+#error {
+    padding-bottom: 1rem;
+}
 
 /* List */
 li {
@@ -225,10 +229,13 @@ li {
   margin-bottom: 0.5rem;
   cursor: move;
 }
+span {
+    padding-left: 2rem;
+}
 
 /* Drag and Drop Landing Element */
 .over {
-  border: 3px darkslateblue;
+  border: 3px dashed darkslateblue;
 }
 
 /* Arrow */

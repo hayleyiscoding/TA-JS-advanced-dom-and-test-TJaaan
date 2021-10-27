@@ -16,7 +16,7 @@ function errorMessage() {
   let error = document.querySelector("#error");
   if (input.value === "") {
     error.innerHTML = "Error: Please enter an item";
-    error.style.color = "red";
+    error.style.color = "red";``
     return false;
   } else {
     return true;

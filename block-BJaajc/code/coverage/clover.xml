@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1635694238265" clover="3.2.0">
+  <project timestamp="1635694238265" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4" elements="16" coveredelements="16" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+    <file name="index.js" path="/Users/hayley/Desktop/Altcampus course/javascript/advanced-javascript/TA-JS-advanced-dom-and-test-TJaaan/block-BJaajc/code/index.js">
+      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="12" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="28" count="2" type="stmt"/>
+      <line num="36" count="2" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
